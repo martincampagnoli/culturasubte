@@ -1,0 +1,22 @@
+{
+"nombre": "Juan Ciovini",
+"genero": "musical",
+"bio": "Juan Ciovini , percusionista y compositor de 25 años de edad , oriundo de Río Grande, Tierra del Fuego. Además de investigar nuevos sonidos a partir de instrumentos orgánicos, (cotidiafonos) acaba de sacar su primer trabajo discográfico solista, el cual grabó, produjo y mezcló en su estudio casero.",
+"lugar": "Estación Pueyrredón (línea D).",
+"horario": "Mañanas de lunes a viernes.",
+"contacto": [{
+"nombre": "Juan Ciovini",
+"link": "https://www.facebook.com/juanciovinipercusion/",
+"mail": "InsertMail",
+"tel": "InsertPhone"
+}],
+"novedades": [{
+"text": "Juan acaba de sacar su primer disco solista en formato digital! Disfrutalo acá: https://www.youtube.com/watch?v=7eWpxHHJ7Ig",
+"fecha": "09-02-2018"
+}],
+"comentarios": [{
+"nombre":"Mariana Viveros",
+"text": "Tu música es alucinante! Un hallazgo muy grato.",
+"fecha": "09-02-2018"
+}]
+}
