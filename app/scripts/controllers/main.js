@@ -8,7 +8,7 @@
  * Controller of the csApp
  */
 angular.module('csApp')
-  .controller('MainCtrl', function () {
+  .controller('MainCtrl', ['$scope', '$http', '$timeout', function ($scope, $http, $timeout) {
     $scope.artistUrl = 'data/projects.json';
     $scope.linesUrl = 'data/lines.json';
 
@@ -31,7 +31,4 @@ angular.module('csApp')
 				});
 			}, 250);
 		};
-
-
-
-  });
+  }]);
