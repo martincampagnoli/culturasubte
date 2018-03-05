@@ -2,16 +2,36 @@
 
 /**
  * @ngdoc function
- * @name whipApp.controller:MainCtrl
+ * @name csApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the whipApp
+ * Controller of the csApp
  */
-angular.module('whipApp')
+angular.module('csApp')
   .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    $scope.artistUrl = 'data/projects.json';
+    $scope.linesUrl = 'data/lines.json';
+
+    $scope.loadArtists = function () {
+			//UIHelper.blockUI();
+			$timeout(function(){
+				$http.get($scope.artistUrl).success(function (data){
+					$scope.artists = data;
+					//UIHelper.unblockUI();
+				});
+			}, 250);
+		};
+
+    $scope.loadLines = function () {
+			//UIHelper.blockUI();
+			$timeout(function(){
+				$http.get($scope.linesUrl).success(function (data){
+					$scope.lines = data;
+					//UIHelper.unblockUI();
+				});
+			}, 250);
+		};
+
+
+
   });

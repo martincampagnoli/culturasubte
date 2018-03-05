@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name whipApp
+ * @name csApp
  * @description
- * # whipApp
+ * # csApp
  *
  * Main module of the application.
  */
 angular
-  .module('whipApp', [
+  .module('csApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
