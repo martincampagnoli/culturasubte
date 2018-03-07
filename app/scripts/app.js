@@ -48,3 +48,17 @@ angular
         redirectTo: '/'
       });
   });
+
+
+  angular.module('csApp')
+    .directive('gridEffect', function(){
+      return {
+        restrict: 'A',
+        link: function(scope, elem) {
+          new AnimOnScroll(elem[0], {
+            minDuration : 0.4,
+            maxDuration : 0.7,
+            viewportFactor : 0.2
+          } );
+        }
+    }});
