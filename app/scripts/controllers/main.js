@@ -10,18 +10,26 @@
  */
 angular.module('csApp')
   .controller('MainCtrl', ['$scope', '$http', '$timeout', function ($scope, $http, $timeout) {
-    $scope.artistUrl = 'data/projects.json';
-    $scope.linesUrl = 'data/lines.json';
 
-    $scope.loadArtists = function () {
-			//UIHelper.blockUI();
-			$timeout(function(){
-				$http.get($scope.artistUrl).success(function (data){
-					$scope.artists = data;
-					//UIHelper.unblockUI();
-				});
-			}, 250);
+    function loadArtists() {
+      var artistRef = firebase.database().ref('artists/');
+
+      artistRef.once('value', function(snapshot) {
+        $scope.artists = snapshot.val();
+        console.dir(snapshot.val());
+
+      });
 		};
+
+    function loadLines() {
+      var linesRef = firebase.database().ref('lines/');
+
+      linesRef.once('value', function(snapshot) {
+        $scope.lines = snapshot.val();
+        console.dir(snapshot.val());
+      });
+		};
+
 
     $scope.loadLines = function () {
 			//UIHelper.blockUI();
@@ -36,5 +44,13 @@ angular.module('csApp')
     $scope.$on('$routeChangeStart', function() {
      $('html, body').animate({ scrollTop: 0 }, 'fast');
     });
+
+    function init(){
+      loadArtists();
+      loadLines();
+    }
+
+    init();
+
 
   }]);
