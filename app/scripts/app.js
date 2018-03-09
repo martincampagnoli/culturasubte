@@ -62,3 +62,17 @@ angular
           } );
         }
     }});
+
+    angular.module('csApp')
+      .directive('menuOpen', function(){
+        return {
+          restrict: 'A',
+          link: function(scope, elem) {
+            			// Menu settings
+                  $('#menuToggle, .menu-close').on('click', function(){
+              			$('#menuToggle').toggleClass('active');
+              			$('body').toggleClass('body-push-toleft');
+              			$('#theMenu').toggleClass('menu-open');
+            			});
+          }
+      }});
