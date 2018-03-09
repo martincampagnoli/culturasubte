@@ -9,7 +9,12 @@
  * Controller of the csApp
  */
 angular.module('csApp')
-  .controller('MainCtrl', ['$scope', '$http', '$timeout', function ($scope, $http, $timeout) {
+  .controller('MainCtrl', ['$scope', '$http', '$timeout', '$location', function ($scope, $http, $timeout, $location) {
+
+    function init(){
+        loadArtists();
+        loadLines();
+    }
 
     function loadArtists() {
       var artistRef = firebase.database().ref('artists/');
@@ -31,24 +36,14 @@ angular.module('csApp')
 		};
 
 
-    $scope.loadLines = function () {
-			//UIHelper.blockUI();
-			$timeout(function(){
-				$http.get($scope.linesUrl).success(function (data){
-					$scope.lines = data;
-					//UIHelper.unblockUI();
-				});
-			}, 250);
+    $scope.goTo = function (str) {
+      $location.url(str);
 		};
 
     $scope.$on('$routeChangeStart', function() {
      $('html, body').animate({ scrollTop: 0 }, 'fast');
     });
 
-    function init(){
-      loadArtists();
-      loadLines();
-    }
 
     init();
 

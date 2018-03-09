@@ -28,26 +28,30 @@ angular
       .when('/about', {
         templateUrl: 'views/about.html',
       })
-	  .when('/portfolio', {
-        templateUrl: 'views/portfolio.html'
-      })
-	  .when('/lines', {
-        templateUrl: 'views/lines.html'
-      })
-	  .when('/info', {
-        templateUrl: 'views/info.html'
-      })
-	  .when('/notes', {
-        templateUrl: 'views/notes.html'
-      })
-	  .when('/services', {
-        templateUrl: 'views/services.html'
-      })
-	  .when('/about', {
-        templateUrl: 'views/about.html'
-      })
-      .otherwise({
-        redirectTo: '/'
+  	  .when('/portfolio', {
+          templateUrl: 'views/portfolio.html'
+        })
+  	  .when('/lines', {
+          templateUrl: 'views/lines.html'
+        })
+  	  .when('/info', {
+          templateUrl: 'views/info.html'
+        })
+  	  .when('/notes', {
+          templateUrl: 'views/notes.html'
+        })
+  	  .when('/services', {
+          templateUrl: 'views/services.html'
+        })
+  	  .when('/about', {
+          templateUrl: 'views/about.html'
+        })
+      .when('/form', {
+            templateUrl: 'views/form.html'
+            //controller: FormCtrl
+          })
+        .otherwise({
+          redirectTo: '/'
       });
   });
 
