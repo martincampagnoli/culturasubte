@@ -1,3 +1,5 @@
+/*global $, AnimOnScroll*/
+
 'use strict';
 
 /**
@@ -61,18 +63,20 @@ angular
             viewportFactor : 0.2
           } );
         }
-    }});
+    };
+  });
 
     angular.module('csApp')
       .directive('menuOpen', function(){
         return {
           restrict: 'A',
-          link: function(scope, elem) {
+          link: function() {
             			// Menu settings
-                  $('#menuToggle, .menu-close').on('click', function(){
-              			$('#menuToggle').toggleClass('active');
-              			$('body').toggleClass('body-push-toleft');
-              			$('#theMenu').toggleClass('menu-open');
-            			});
+            $('#menuToggle, .menu-close').on('click', function(){
+            	$('#menuToggle').toggleClass('active');
+            	$('body').toggleClass('body-push-toleft');
+            	$('#theMenu').toggleClass('menu-open');
+            });
           }
-      }});
+      };
+    });

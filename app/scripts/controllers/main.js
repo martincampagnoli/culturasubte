@@ -1,3 +1,4 @@
+/*global $*/
 'use strict';
 
 /**
@@ -32,7 +33,7 @@ angular.module('csApp')
 			}, 250);
 		};
 
-    $scope.$on('$routeChangeStart', function($event, next, current) {
+    $scope.$on('$routeChangeStart', function() {
      $('html, body').animate({ scrollTop: 0 }, 'fast');
     });
 

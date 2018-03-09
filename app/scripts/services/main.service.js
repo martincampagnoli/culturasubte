@@ -1,5 +1,3 @@
-
-/*global services, common*/
 // 
 // 'use strict';
 //
