@@ -1,4 +1,4 @@
-/*global $*/
+/*global $, firebase*/
 'use strict';
 
 /**
@@ -11,11 +11,6 @@
 angular.module('csApp')
   .controller('MainCtrl', ['$scope', '$http', '$timeout', '$location', function ($scope, $http, $timeout, $location) {
 
-    function init(){
-        loadArtists();
-        loadLines();
-    }
-
     function loadArtists() {
       var artistRef = firebase.database().ref('artists/');
 
@@ -24,7 +19,7 @@ angular.module('csApp')
         console.dir(snapshot.val());
 
       });
-		};
+		}
 
     function loadLines() {
       var linesRef = firebase.database().ref('lines/');
@@ -33,8 +28,12 @@ angular.module('csApp')
         $scope.lines = snapshot.val();
         console.dir(snapshot.val());
       });
-		};
+		}
 
+    function init(){
+        loadArtists();
+        loadLines();
+    }
 
     $scope.goTo = function (str) {
       $location.url(str);
