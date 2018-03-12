@@ -1,9 +1,9 @@
 	<!-- MAIN IMAGE SECTION -->
-	<div id="noteswrap">
+	<div id="noteswrap" ng-controller="FormCtrl">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
-					<h2>Formulario de Registro<br/>
+					<h2>¡Llená el formulario y promocionate en Cultura Subterránea!<br/>
 					</h2>
 				</div>
 			</div><!-- row -->
@@ -20,7 +20,7 @@
 		</div>
 		<div class="row mt">
 			<div class="col-lg-8">
-				<h1>Inscripción de artista</h1>
+				<h1>¡Llená el formulario y promocionate en Cultura Subterránea!</h1>
 				<br>
 			</div>
 			<div class="col-lg-4"></div>
@@ -37,7 +37,79 @@
 	<div class="container">
 		<div class="row mt centered">
 			<div class="col-lg-12">
-		
+				<form id="contact-form">
+								<div class="col-md-2"></div>
+                <div class="col-md-8">
+               		<fieldset class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Escribí tu nombre..">
+                  	</fieldset>
+
+                  	<fieldset class="form-group">
+                    	<label for="email">Género:</label>
+                    	<input type="email" class="form-control" id="email" placeholder="Escribí el género...">
+                  	</fieldset>
+
+										<fieldset class="form-group col-md-12">
+                    	<label for="email">Integrantes (sólo llenar en caso de no ser solista):</label>
+											<div class="col-md-8">
+                    		<input type="email" class="form-control" id="email" placeholder="Integrantes..." ng-disabled="solo">
+											</div>
+											<div class="col-md-4">
+												<label for="email">Solista:</label>
+												<input type="checkbox" ng-click="solo = !solo">
+											</div>
+                  	</fieldset>
+
+										<fieldset class="form-group">
+                    	<label for="message">Biografía (aquí podrás compartir una breve reseña sobre vos o tu grupo artístico): </label>
+                    	<textarea class="form-control" id="message" rows="4" placeholder="Escribí tu Biografía..."></textarea>
+                  	</fieldset>
+
+										<fieldset class="form-group">
+                    	<label for="email">Contacto:</label><br>
+											<a ng-click="facebookVisible=true" ng-show="!facebookVisible">Facebook...</a><br>
+											<input type="email" ng-show="facebookVisible" class="form-control" id="email" placeholder="Facebook">
+
+											<a ng-click="twitterVisible=true" ng-show="!twitterVisible">Twitter...</a><br>
+											<input type="email" ng-show="twitterVisible" class="form-control" id="email" placeholder="Twitter">
+
+											<a ng-click="instagramVisible=true" ng-show="!instagramVisible">Instagram...</a><br>
+											<input type="email" ng-show="instagramVisible" class="form-control" id="email" placeholder="Instagram">
+
+											<a ng-click="telVisible=true" ng-show="!telVisible">Teléfono...</a><br>
+											<input type="email" ng-show="telVisible" class="form-control" id="email" placeholder="Teléfono">
+
+											<a ng-click="emailVisible=true" ng-show="!emailVisible">Correo electrónico...</a><br>
+                    	<input type="email" ng-show="emailVisible" class="form-control" id="email" placeholder="Correo electrónico">
+                  	</fieldset>
+										<fieldset class="form-group">
+                    	<label for="email">Fotos/videos/audios</label>
+                    	<input type="file" class="form-control" id="email" placeholder="">
+                  	</fieldset>
+										<fieldset class="form-group">
+                    	<label for="email">Lugar (aclará en que línea o estación te presentas):</label>
+                    	<input type="email" class="form-control" id="email" placeholder="Lugar...">
+                  	</fieldset>
+
+										<fieldset class="form-group">
+                    	<label for="email">Cuándo (aclará en que día y horario te pueden encontrar los usuarios en el subte):</label>
+                    	<input type="email" class="form-control" id="email" placeholder="Cuando...">
+                  	</fieldset>
+										<div class="checkbox">
+                    	<label>
+                      		<p><input type="checkbox"> Acepto los <a ng-click="openTerms()">términos y condiciones</a></p>
+                    	</label>
+                  	</div>
+
+                  	<button class="btn btn-green btn-lg">Ingresar</button>
+										<br>
+										<br>
+                </div>
+                <div class="col-md-2">
+                </div>
+					</form>
+
 			</div>
 
 		</div><!-- row -->
