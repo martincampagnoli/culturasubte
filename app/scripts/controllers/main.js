@@ -13,20 +13,22 @@ angular.module('csApp')
 
     function loadArtists() {
       var artistRef = firebase.database().ref('artists/');
-
-      artistRef.once('value', function(snapshot) {
-        $scope.artists = snapshot.val();
-        console.dir(snapshot.val());
-
-      });
+        artistRef.once('value', function(snapshot) {
+          $timeout(function(){
+            $scope.artists = snapshot.val();
+            console.dir(snapshot.val());
+          });
+        });
 		}
 
     function loadLines() {
       var linesRef = firebase.database().ref('lines/');
 
       linesRef.once('value', function(snapshot) {
-        $scope.lines = snapshot.val();
-        console.dir(snapshot.val());
+        $timeout(function(){
+          $scope.lines = snapshot.val();
+          console.dir(snapshot.val());
+        });
       });
 		}
 

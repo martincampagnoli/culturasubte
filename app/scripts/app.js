@@ -48,7 +48,6 @@ angular
         })
       .when('/form', {
             templateUrl: 'views/form.html'
-            //controller: FormCtrl
           })
         .otherwise({
           redirectTo: '/'

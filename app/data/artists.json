@@ -5,12 +5,13 @@
 		"bio": "Alegría Subterránea es un grupo de personas que todos los viernes de cada mes bajan al subte para romper estructuras y alegrar a los pasajeros. ¿Su objetivo? Dar amor sin recibir nada a cambio.",
 		"lugar": "El vagón de la Línea B",
 		"horario": "La noche del último viernes de cada mes.",
-		"contacto": [{
-			"nombre": "Alegría Subterránea",
-			"link": "https://www.facebook.com/AlegriaSubterranea/",
-			"mail": "",
+		"contacto": {
+			"instagram": "",
+			"facebook": "https://www.facebook.com/AlegriaSubterranea/",
+      "twitter": "",
+			"email": "",
 			"tel": ""
-		}],
+		},
 		"novedades": [{
 			"text": "novedad1",
 			"fecha": "09-02-2018"
@@ -27,12 +28,13 @@
 		"bio": "Músico y bandoneonista neuquino, que reside actualmente en Buenos Aires. Comenzó sus estudios musicales durante su adolescencia, para más tarde ingresar en el conservatorio Manuel Falla, donde estudió con destacados músicos como Rodolfo Daluisio, César Angeleri y Claudio Ucceli, entre otros. A lo largo de estos años ha logrado subir a distintos escenarios bonaerenses y capitalinos, en los cuales se desempeñó como acompañante de cantantes de diversos géneros. En 2009 participó en el Festival de Jesús María (Córdoba), acompañando a la cantante Claudia Armani. En la actualidad es el bandoneón de la banda de cumbia platense Pacha Encuentro.",
 		"lugar": "Estación Lima (Línea A).",
 		"horario": "Mañanas de lunes a viernes.",
-		"contacto": [{
-			"nombre": "Bandoneón Patagónico",
-			"link": "https://www.facebook.com/bandoneonpatagonico/",
-			"mail": "mailto:olmomasini@gmail.com",
+		"contacto": {
+			"instagram": "Bandoneón Patagónico",
+			"facebook": "https://www.facebook.com/bandoneonpatagonico/",
+      "twitter": "",
+			"email": "olmomasini@gmail.com",
 			"tel": "(011) (15) 3648-3910"
-		}],
+		},
 		"novedades": [{
 			"text": "Encontralo junto a Pacha Encuentro, en Guajira (49 e/ 4 y 5, La Plata), el sábado 24 de Febrero a las 00:00 hs, link del evento https://www.facebook.com/events/340198509819184/?event_time_id=340198526485849",
 			"fecha": "24-02-2018"
@@ -49,12 +51,13 @@
 		"bio": "Juan Ciovini , percusionista y compositor de 25 años de edad , oriundo de Río Grande, Tierra del Fuego. Además de investigar nuevos sonidos a partir de instrumentos orgánicos, (cotidiafonos) acaba de sacar su primer trabajo discográfico solista, el cual grabó, produjo y mezcló en su estudio casero.",
 		"lugar": "Estación Pueyrredón (línea D).",
 		"horario": "Mañanas de lunes a viernes.",
-		"contacto": [{
-			"nombre": "Juan Ciovini",
-			"link": "https://www.facebook.com/juanciovinipercusion/",
-			"mail": "",
+		"contacto": {
+			"instagram": "",
+			"facebook": "https://www.facebook.com/juanciovinipercusion/",
+      "twitter": "",
+			"email": "",
 			"tel": ""
-		}],
+		},
 		"novedades": [{
 			"text": "Juan acaba de sacar su primer disco solista en formato digital! Disfrutalo acá: https://www.youtube.com/watch?v=7eWpxHHJ7Ig",
 			"fecha": "09-02-2018"
@@ -71,12 +74,13 @@
 		"bio": "Rumbo Subterráneo es un proyecto que nace en el subte de Ciudad Autónoma de Bs As, espacio de expresión artística. Donde un mundo bajo tierra vive y se traslada por él. Un viaje sin fronteras, un mundo cosmopolita y a base de MusicaS. Uniendo sonidos, ritmos, melodías. Con la gente de la ciudad, con vendedores ambulantes, pregoneros, falderos, mangueros y todo tipo de predicadores. Recreando canciones de otros tiempos y otros lugares y dándoles un sonido y forma particular, Rumbero, fiestero, cálido y armonioso. Fusionando el Tango, el jazz, el folklore con la rumba, el funky, el rap.",
 		"lugar": "El vagón de la Línea H",
 		"horario": "Mañanas de martes a domingo.",
-		"contacto": [{
-			"nombre": "Rumbo Subterráneo",
-			"link": "https://www.facebook.com/RumboSubterraneo/",
-			"mail": "",
+		"contacto": {
+			"instagram": "Rumbo Subterráneo",
+			"facebook": "https://www.facebook.com/RumboSubterraneo/",
+      "twitter": "",
+			"email": "",
 			"tel": ""
-		}],
+		},
 		"novedades": [{
 			"text": "Rumbo Subterráneo acaba de sacar su primer cd! Aquí pueden disfrutarlo https://www.youtube.com/watch?v=rzpPXJLxaik",
 			"fecha": "06-11-2017"
@@ -93,18 +97,43 @@
 		"bio": "Somos un dúo de jazz callejero, adaptamos temas clásicos de jazz y swing para tocar en el subte. German Heredia es el guitarrista y Bruno Renno el melodiquista. En ocasiones tocamos blues o rock. Nos conocemos desde la secundaria, donde teníamos una humilde banda de rock adolescente, siempre estuvimos haciendo música juntos con el pasar de los años. Afuera del subte nos pueden encontrar como Black Buttons electric jazz music, tocamos con instrumentos digitales, piano y guitarra eléctrica.",
 		"lugar": "",
 		"horario": "Miércoles y jueves desde el mediodía hasta la noche.",
-		"contacto": [{
-			"nombre": "",
-			"link": "",
-			"mail": "",
+		"contacto": {
+			"instagram": "",
+      "facebook": "",
+			"twitter": "",
+			"email": "",
 			"tel": ""
-		}],
+		},
 		"novedades": [{
 			"text": "novedad1",
 			"fecha": "09-02-2018"
 		}],
 		"comentarios": [{
-			"text": "comentario1",
+      "nombre":"",
+      "text": "comentario1",
+			"fecha": "09-02-2018"
+		}]
+	},
+  {
+		"nombre": "Sebastián Ango",
+		"genero": "musical",
+		"bio": "Sebastián toca el acordeón hace diez años. Su especialidad es la cumbia aunque también hace algunos vals, chamamé y canciones de rock nacional. También lo podés encontrar en la línea de ferrocarriles General Roca. Además, fuera del subte forma parte del conjunto 'La Guaracha'.",
+		"lugar": "El vagón de la línea E.",
+		"horario": "Todas las tardes de los días de semana.",
+		"contacto": {
+      "instagram": "",
+      "facebook": "https://www.facebook.com/sebastian.ango.5",
+			"twitter": "",
+			"email": "",
+			"tel": ""
+		},
+		"novedades": [{
+			"text": "novedad1",
+			"fecha": "09-02-2018"
+		}],
+		"comentarios": [{
+      "nombre":"Leonardo Troncoso",
+      "text": "Grande Sebas!!! y todos los músicos que se ganan la vida con la música!!",
 			"fecha": "09-02-2018"
 		}]
 	}

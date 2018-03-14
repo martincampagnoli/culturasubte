@@ -58,13 +58,13 @@ hr {
 .btn {
     border-radius: 0;
 }
-.btn-green {
+.btn-red {
     color: #fff;
     background-color: #e60000;
     border-color: #e60000;
     font-weight: 300;
 }
-.btn-green:hover, .btn-green:focus, .btn-green:active, .btn-green.active, .open .dropdown-toggle.btn-green {
+.btn-red:hover, .btn-red:focus, .btn-red:active, .btn-red.active, .open .dropdown-toggle.btn-red {
     color: #fff;
     background-color: #ba0000;
     border-color: #ba0000;
@@ -569,6 +569,11 @@ hr {
 #cf .col-lg-8 {
     margin: 0;
     padding: 0;
+}
+
+.responsive{
+  height: auto;
+  max-width: 100%;
 }
 .process {
     max-width: 69em;
