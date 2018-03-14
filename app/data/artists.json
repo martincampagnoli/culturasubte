@@ -109,7 +109,30 @@
 			"fecha": "09-02-2018"
 		}],
 		"comentarios": [{
-			"text": "comentario1",
+      "nombre":"",
+      "text": "comentario1",
+			"fecha": "09-02-2018"
+		}]
+	},
+  {
+		"nombre": "Sebastián Ango",
+		"genero": "musical",
+		"bio": "Sebastián toca el acordeón hace diez años. Su especialidad es la cumbia aunque también hace algunos vals, chamamé y canciones de rock nacional. También lo podés encontrar en la línea de ferrocarriles General Roca. Además, fuera del subte forma parte del conjunto 'La Guaracha'.",
+		"lugar": "El vagón de la línea E.",
+		"horario": "Todas las tardes de los días de semana.",
+		"contacto": [{
+			"nombre": "Sebastián Ango",
+			"link": "https://www.facebook.com/sebastian.ango.5",
+			"mail": "",
+			"tel": ""
+		}],
+		"novedades": [{
+			"text": "novedad1",
+			"fecha": "09-02-2018"
+		}],
+		"comentarios": [{
+      "nombre":"Leonardo Troncoso",
+      "text": "Grande Sebas!!! y todos los músicos que se ganan la vida con la música!!",
 			"fecha": "09-02-2018"
 		}]
 	}
