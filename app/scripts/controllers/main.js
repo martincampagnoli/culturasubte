@@ -46,7 +46,7 @@ angular.module('csApp')
               console.dir(snapshot.val());
             });
           });
-    }
+    };
 
     $scope.goTo = function (str) {
       $location.url(str);
