@@ -49,6 +49,9 @@ angular
       .when('/form', {
             templateUrl: 'views/form.html'
           })
+      .when('/details/:id', {
+        templateUrl: 'views/details.html'
+        })
         .otherwise({
           redirectTo: '/'
       });

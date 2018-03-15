@@ -1,0 +1,33 @@
+<!-- MAIN IMAGE SECTION -->
+<div id="portfoliowrap">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
+				<h2>DEFINIR TITULO PARA ESTA SECCION</h2>
+			</div>
+		</div><!-- row -->
+	</div><!-- /container -->
+</div><!-- /portrwrap -->
+
+<!-- TEAM MEMBERS -->
+<div class="container">
+	<div class="row mt centered">
+
+		<div class="col-lg-12" ng-init="getArtistDetails()">
+			<img class="responsive" ng-src="{{artist.profile_img}}" alt="{{a.nombre}}">
+			<div class="cardinfo">
+				<h4><b>{{artist.nombre}}</b></h4>
+				<h6>{{artist.genero}}</h6>
+				<p>{{artist.bio}}</p>
+				<p>
+					<a href="{{artist.contacto.facebook}}" target="_blank" ng-if="artist.contacto.facebook"><i class="fa fa-facebook"></i></a>
+					<a href="{{artist.contacto.instagram}}" target="_blank" ng-if="artist.contacto.instagram"><i class="fa fa-instagram"></i></a>
+					<a href="{{artist.contacto.twitter}}" target="_blank" ng-if="artist.contacto.twitter"><i class="fa fa-twitter"></i></a>
+					<a href="mailto:{{artist.contacto.email}}" ng-if="artist.contacto.email"><i class="fa fa-envelope"></i></a>
+					<a ng-if="artist.contacto.tel" title="{{artist.contacto.tel}}"><i class="fa fa-phone"></i></a>
+				</p>
+			</div>
+		</div>
+
+	</div><!-- row -->
+</div><!-- container -->
