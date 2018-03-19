@@ -19,7 +19,7 @@ angular.module('csApp')
       f: "F",
       g: "G",
       h: "H",
-    }
+    };
 
     function loadArtists() {
       var artistRef = firebase.database().ref('artists/');
