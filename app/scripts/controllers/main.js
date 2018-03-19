@@ -21,10 +21,12 @@ angular.module('csApp')
 
     function loadArtists() {
       var artistRef = firebase.database().ref('artists/');
+      UIHelper.blockUI();
         artistRef.once('value', function(snapshot) {
           $timeout(function(){
             $scope.artists = snapshot.val();
             console.dir(snapshot.val());
+            UIHelper.unblockUI();
           });
         });
 		}
