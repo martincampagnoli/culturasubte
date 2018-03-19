@@ -3,7 +3,8 @@
 		"nombre": "Alegría Subterránea",
 		"genero": "solidario",
 		"bio": "Alegría Subterránea es un grupo de personas que todos los viernes de cada mes bajan al subte para romper estructuras y alegrar a los pasajeros. ¿Su objetivo? Dar amor sin recibir nada a cambio.",
-		"lugar": "El vagón de la Línea B",
+    "linea":"B",
+    "lugar": "El vagón de la Línea B",
 		"horario": "La noche del último viernes de cada mes.",
 		"contacto": {
 			"instagram": "",
@@ -26,7 +27,8 @@
 		"nombre": "Bandoneón Patagónico",
 		"genero": "musical",
 		"bio": "Músico y bandoneonista neuquino, que reside actualmente en Buenos Aires. Comenzó sus estudios musicales durante su adolescencia, para más tarde ingresar en el conservatorio Manuel Falla, donde estudió con destacados músicos como Rodolfo Daluisio, César Angeleri y Claudio Ucceli, entre otros. A lo largo de estos años ha logrado subir a distintos escenarios bonaerenses y capitalinos, en los cuales se desempeñó como acompañante de cantantes de diversos géneros. En 2009 participó en el Festival de Jesús María (Córdoba), acompañando a la cantante Claudia Armani. En la actualidad es el bandoneón de la banda de cumbia platense Pacha Encuentro.",
-		"lugar": "Estación Lima (Línea A).",
+    "linea":"A",
+    "lugar": "Estación Lima (Línea A).",
 		"horario": "Mañanas de lunes a viernes.",
 		"contacto": {
 			"instagram": "Bandoneón Patagónico",
@@ -49,7 +51,8 @@
 		"nombre": "Juan Ciovini",
 		"genero": "musical",
 		"bio": "Juan Ciovini , percusionista y compositor de 25 años de edad , oriundo de Río Grande, Tierra del Fuego. Además de investigar nuevos sonidos a partir de instrumentos orgánicos, (cotidiafonos) acaba de sacar su primer trabajo discográfico solista, el cual grabó, produjo y mezcló en su estudio casero.",
-		"lugar": "Estación Pueyrredón (línea D).",
+    "linea":"D",
+    "lugar": "Estación Pueyrredón (línea D).",
 		"horario": "Mañanas de lunes a viernes.",
 		"contacto": {
 			"instagram": "",
@@ -72,7 +75,8 @@
 		"nombre": "Rumbo Subterráneo",
 		"genero": "musical",
 		"bio": "Rumbo Subterráneo es un proyecto que nace en el subte de Ciudad Autónoma de Bs As, espacio de expresión artística. Donde un mundo bajo tierra vive y se traslada por él. Un viaje sin fronteras, un mundo cosmopolita y a base de MusicaS. Uniendo sonidos, ritmos, melodías. Con la gente de la ciudad, con vendedores ambulantes, pregoneros, falderos, mangueros y todo tipo de predicadores. Recreando canciones de otros tiempos y otros lugares y dándoles un sonido y forma particular, Rumbero, fiestero, cálido y armonioso. Fusionando el Tango, el jazz, el folklore con la rumba, el funky, el rap.",
-		"lugar": "El vagón de la Línea H",
+    "linea":"H",
+    "lugar": "El vagón de la Línea H",
 		"horario": "Mañanas de martes a domingo.",
 		"contacto": {
 			"instagram": "Rumbo Subterráneo",
@@ -95,6 +99,7 @@
 		"nombre": "Underground Swing Duo",
 		"genero": "musical",
 		"bio": "Somos un dúo de jazz callejero, adaptamos temas clásicos de jazz y swing para tocar en el subte. German Heredia es el guitarrista y Bruno Renno el melodiquista. En ocasiones tocamos blues o rock. Nos conocemos desde la secundaria, donde teníamos una humilde banda de rock adolescente, siempre estuvimos haciendo música juntos con el pasar de los años. Afuera del subte nos pueden encontrar como Black Buttons electric jazz music, tocamos con instrumentos digitales, piano y guitarra eléctrica.",
+    "linea":"H",
 		"lugar": "",
 		"horario": "Miércoles y jueves desde el mediodía hasta la noche.",
 		"contacto": {
@@ -118,7 +123,8 @@
 		"nombre": "Sebastián Ango",
 		"genero": "musical",
 		"bio": "Sebastián toca el acordeón hace diez años. Su especialidad es la cumbia aunque también hace algunos vals, chamamé y canciones de rock nacional. También lo podés encontrar en la línea de ferrocarriles General Roca. Además, fuera del subte forma parte del conjunto 'La Guaracha'.",
-		"lugar": "El vagón de la línea E.",
+    "linea":"E",
+    "lugar": "El vagón de la línea E.",
 		"horario": "Todas las tardes de los días de semana.",
 		"contacto": {
       "instagram": "",

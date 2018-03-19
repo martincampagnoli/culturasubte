@@ -10,6 +10,16 @@
  */
 angular.module('csApp')
   .controller('MainCtrl', ['$scope', '$http', '$timeout', '$location', '$routeParams', function ($scope, $http, $timeout, $location, $routeParams) {
+    $scope.lineasConst = {
+      a: "A",
+      b: "B",
+      c: "C",
+      d: "D",
+      e: "E",
+      f: "F",
+      g: "G",
+      h: "H",
+    }
 
     function loadArtists() {
       var artistRef = firebase.database().ref('artists/');
@@ -36,7 +46,6 @@ angular.module('csApp')
         loadArtists();
         loadLines();
     }
-
 
     $scope.getArtistDetails = function(){
         var detailsRef = firebase.database().ref('artists/' + $routeParams.id);
