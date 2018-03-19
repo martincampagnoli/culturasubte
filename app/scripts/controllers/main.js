@@ -16,8 +16,6 @@ angular.module('csApp')
       c: "C",
       d: "D",
       e: "E",
-      f: "F",
-      g: "G",
       h: "H",
     };
 
