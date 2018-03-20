@@ -3,30 +3,100 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2">
-				<h2>Encontrá a tu Artista</h2>
+				<h2>Encontrá a tu Artista<br/>
+				</h2>
 			</div>
 		</div><!-- row -->
 	</div><!-- /container -->
 </div><!-- /portrwrap -->
 
+
+
 <!-- TEAM MEMBERS -->
 <div class="container">
-	<div class="row mt centered">
+	<div class="row">
+		<br>
+		<br>
+		<div class="col-lg-8">
+			<p> Aquí podrás buscar a tu artista preferido, ya sea por el tipo de actividad que
+			realiza o según la línea donde se presenta. </p>
+		</div>
+		<div class="col-lg-4">
+			<p class="pull-right"><br><button type="button" class="btn btn-red">Buscá a tu artista</button></p>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="row">
 
-		<div class="col-lg-12" ng-repeat="a in artists"><!-- ng-repeat-->
-			<img class="responsive" ng-src="{{a.profile_img}}" alt="{{a.nombre}}">
-			<div class="cardinfo">
-				<h4><b>{{a.nombre}}</b></h4>
-				<h6>{{a.genero}}</h6>
-				<p>{{a.bio}}</p>
-				<p>
-					<a href="{{a.contacto.facebook}}" target="_blank" ng-if="a.contacto.facebook"><i class="fa fa-facebook"></i></a>
-					<a href="{{a.contacto.instagram}}" target="_blank" ng-if="a.contacto.instagram"><i class="fa fa-instagram"></i></a>
-					<a href="{{a.contacto.twitter}}" target="_blank" ng-if="a.contacto.twitter"><i class="fa fa-twitter"></i></a>
-					<a href="mailto:{{a.contacto.email}}" ng-if="a.contacto.email"><i class="fa fa-envelope"></i></a>
-					<a ng-if="a.contacto.tel" title="{{a.contacto.tel}}"><i class="fa fa-phone"></i></a>
-				</p>
-			</div>
+		<div class="col-lg-12"><!-- ng-repeat-->
+
+			<table class="table  table-bordered">
+			  <thead>
+			    <tr>
+			      <th scope="col" class="col-lg-6">Género:</th>
+			      <th scope="col">Líneas:</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <th scope="row">Actuación</td>
+			      <td><span><b>{{lineasConst.a}}</b></span><br>
+							<div class="col-lg-6 padding-grid" ng-repeat="a in artists track by $index" ng-if="a.linea == lineasConst.a">
+								<a href="#/details/{{$index}}"><img ng-src="{{a.profile_img}}" height="50" width="75"><br>{{a.nombre}}</a>
+							</div>
+						</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">Danza</th>
+						<td><span><b>{{lineasConst.b}}</b></span><br>
+							<div class="col-lg-6 padding-grid" ng-repeat="a in artists track by $index" ng-if="a.linea == lineasConst.b">
+								<a href="#/details/{{$index}}"><img ng-src="{{a.profile_img}}" height="50" width="75"><br>{{a.nombre}}</a>
+							</div>
+						</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">Magia</th>
+						<td><span><b>{{lineasConst.c}}</b></span><br>
+							<div class="col-lg-6 padding-grid" ng-repeat="a in artists track by $index" ng-if="a.linea == lineasConst.c">
+								<a href="#/details/{{$index}}">{{a.nombre}}</a>
+							</div>
+						</td>
+			    </tr>
+					<tr>
+			      <td scope="row"><span><b>Música</b></span><br>
+							<div class="col-lg-6 padding-grid" ng-repeat="a in artists track by $index" ng-if="a.genero == 'musical'">
+								<a href="#/details/{{$index}}"><img ng-src="{{a.profile_img}}" height="50" width="75"><br>{{a.nombre}}</a>
+							</div>
+						</td>
+						<td><span><b>{{lineasConst.d}}</b></span><br>
+							<div class="col-lg-6 padding-grid" ng-repeat="a in artists track by $index" ng-if="a.linea == lineasConst.d">
+								<a href="#/details/{{$index}}"><img ng-src="{{a.profile_img}}" height="50" width="75"><br>{{a.nombre}}</a>
+							</div>
+						</td>
+			    </tr>
+					<tr>
+						<td scope="row"><span><b>Solidario</b></span><br>
+							<div class="col-lg-6 padding-grid" ng-repeat="a in artists track by $index" ng-if="a.genero == 'solidario'">
+								<a href="#/details/{{$index}}"><img ng-src="{{a.profile_img}}" height="50" width="75"><br>{{a.nombre}}</a>
+							</div>
+						</td>
+						<td><span><b>{{lineasConst.e}}</b></span><br>
+							<div class="col-lg-6 padding-grid" ng-repeat="a in artists track by $index" ng-if="a.linea == lineasConst.e">
+								<a href="#/details/{{$index}}"><img ng-src="{{a.profile_img}}" height="50" width="75"><br>{{a.nombre}}</a>
+							</div>
+						</td>
+			    </tr>
+					<tr>
+			      <th scope="row"></th>
+						<td><span><b>{{lineasConst.h}}</b></span><br>
+							<div class="col-lg-6 padding-grid" ng-repeat="a in artists track by $index" ng-if="a.linea == lineasConst.h">
+								<a href="#/details/{{$index}}"><img ng-src="{{a.profile_img}}" height="50" width="75"><br>{{a.nombre}}</a>
+							</div>
+						</td>
+			    </tr>
+			  </tbody>
+			</table>
 		</div>
 
 	</div><!-- row -->

@@ -9,14 +9,24 @@
  * Controller of the csApp
  */
 angular.module('csApp')
-  .controller('MainCtrl', ['$scope', '$http', '$timeout', '$location', function ($scope, $http, $timeout, $location) {
+  .controller('MainCtrl', ['$scope', '$http', '$timeout', '$location', '$routeParams', function ($scope, $http, $timeout, $location, $routeParams) {
+    $scope.lineasConst = {
+      a: "A",
+      b: "B",
+      c: "C",
+      d: "D",
+      e: "E",
+      h: "H",
+    };
 
     function loadArtists() {
       var artistRef = firebase.database().ref('artists/');
+      UIHelper.blockUI();
         artistRef.once('value', function(snapshot) {
           $timeout(function(){
             $scope.artists = snapshot.val();
             console.dir(snapshot.val());
+            UIHelper.unblockUI();
           });
         });
 		}
@@ -36,6 +46,16 @@ angular.module('csApp')
         loadArtists();
         loadLines();
     }
+
+    $scope.getArtistDetails = function(){
+        var detailsRef = firebase.database().ref('artists/' + $routeParams.id);
+          detailsRef.once('value', function(snapshot) {
+            $timeout(function(){
+              $scope.artist = snapshot.val();
+              console.dir(snapshot.val());
+            });
+          });
+    };
 
     $scope.goTo = function (str) {
       $location.url(str);
