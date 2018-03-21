@@ -271,9 +271,13 @@ hr {
 #serviceswrap h2 {
     color: #fff;
     font-size: 50px;
-    font-weight: 400;
+    font-weight: bold;
     letter-spacing: 2px;
     margin-top: 150px;
+    text-shadow: -1px -1px 1px #aaa,
+             0px 4px 1px rgba(0,0,0,0.5),
+             4px 4px 5px rgba(0,0,0,0.7),
+             0px 0px 7px rgba(0,0,0,0.4);
 }
 #aboutwrap {
     background: url(../img/about-bg.jpg) no-repeat center top;
@@ -299,7 +303,10 @@ hr {
     font-weight: bold;
     letter-spacing: 2px;
     margin-top: 150px;
-    text-shadow: 4px 4px black;
+    text-shadow: -1px -1px 1px #aaa,
+             0px 4px 1px rgba(0,0,0,0.5),
+             4px 4px 5px rgba(0,0,0,0.7),
+             0px 0px 7px rgba(0,0,0,0.4);
 }
 #portwrap {
     background: url(../img/portfolio-bg.jpg) no-repeat center top;
@@ -325,6 +332,10 @@ hr {
     font-weight: bold;
     letter-spacing: 2px;
     margin-top: 150px;
+    text-shadow: -1px -1px 1px #aaa,
+             0px 4px 1px rgba(0,0,0,0.5),
+             4px 4px 5px rgba(0,0,0,0.7),
+             0px 0px 7px rgba(0,0,0,0.4);
 }
 #lineswrap {
     background: url(../img/lines-bg.jpg) no-repeat center top;
@@ -350,7 +361,10 @@ hr {
     font-weight: bold;
     letter-spacing: 2px;
     margin-top: 150px;
-    text-shadow: -1.25px 0 black, 0 1.25px black, 1.25px 0 black, 0 -1.25px black;
+    text-shadow: -1px -1px 1px #aaa,
+             0px 4px 1px rgba(0,0,0,0.5),
+             4px 4px 5px rgba(0,0,0,0.7),
+             0px 0px 7px rgba(0,0,0,0.4);
 }
 #serviceswrap {
     background: url(../img/services-bg.jpg) no-repeat center top;
@@ -376,14 +390,10 @@ hr {
     font-weight: bold;
     letter-spacing: 2px;
     margin-top: 150px;
-    background: rgba(203,198,194,0.5);
-    box-shadow: 5px 3px 30px black;
-    border-radius: 10px;
-    text-shadow: -1.25px 0 black, 0 1.25px black, 1.25px 0 black, 0 -1.25px black;
-}
-#serviceswwrap h2::before {
-  filter: blur(20px);
-  z-index: -1;
+    text-shadow: -1px -1px 1px #aaa,
+             0px 4px 1px rgba(0,0,0,0.5),
+             4px 4px 5px rgba(0,0,0,0.7),
+             0px 0px 7px rgba(0,0,0,0.4);
 }
 #infowrap {
     background: url(../img/info-bg.jpg) no-repeat center top;
@@ -438,18 +448,10 @@ hr {
     font-weight: bold;
     letter-spacing: 2px;
     margin-top: 150px;
-    text-shadow:   0 1px 0 #B8B8B8,
-                   0 2px 0 #A1A1A1,
-                   0 3px 0 #808080,
-                   0 4px 0 #5C5C5C,
-                   0 5px 0 #363636,
-                   0 6px 1px rgba(0,0,0,.1),
-                   0 0 5px rgba(0,0,0,.1),
-                   0 1px 3px rgba(0,0,0,.3),
-                   0 3px 5px rgba(0,0,0,.2),
-                   0 5px 10px rgba(0,0,0,.25),
-                   0 10px 10px rgba(0,0,0,.2),
-                   0 20px 20px rgba(0,0,0,.15);
+    text-shadow: -1px -1px 1px #aaa,
+             0px 4px 1px rgba(0,0,0,0.5),
+             4px 4px 5px rgba(0,0,0,0.7),
+             0px 0px 7px rgba(0,0,0,0.4);
 }
 #portfoliowrap {
     background: url(../img/portfolio-bg.jpg) no-repeat center top;
@@ -470,12 +472,15 @@ hr {
     background-size: cover;
 }
 #portfoliowrap h2 {
-    background-color:rgba(203,198,194,0.5);
     color: #fff;
     font-size: 50px;
     font-weight: bold;
     letter-spacing: 2px;
     margin-top: 150px;
+    text-shadow: -1px -1px 1px #aaa,
+             0px 4px 1px rgba(0,0,0,0.5),
+             4px 4px 5px rgba(0,0,0,0.7),
+             0px 0px 7px rgba(0,0,0,0.4);
 }
 #formwrap {
     background: url(../img/form-bg.jpg) no-repeat center top;
@@ -501,6 +506,10 @@ hr {
     font-weight: bold;
     letter-spacing: 2px;
     margin-top: 150px;
+    text-shadow: -1px -1px 1px #aaa,
+             0px 4px 1px rgba(0,0,0,0.5),
+             4px 4px 5px rgba(0,0,0,0.7),
+             0px 0px 7px rgba(0,0,0,0.4);
 }
 #sp {
     background: #2f2f2f;
