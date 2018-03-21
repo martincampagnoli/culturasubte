@@ -754,3 +754,6 @@ hr {
 .padding-grid {
   padding: 10px;
 }
+.italic {
+  font-style: italic;
+}
