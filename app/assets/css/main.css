@@ -754,3 +754,15 @@ hr {
 .padding-grid {
   padding: 10px;
 }
+
+@media screen and (max-width: 720px)
+{
+    #headerwrap h1
+    {
+        font-size:3em;
+    }
+     #headerwrap h2
+    {
+        font-size:2em;
+    }
+}
