@@ -46,19 +46,14 @@
                   	</fieldset>
 
                   	<fieldset class="form-group">
-                    	<label for="email">Género:</label>
-                    	<input type="email" class="form-control" id="email" placeholder="Escribí el género...">
-                  	</fieldset>
-
-										<fieldset class="form-group col-md-12">
-                    	<label for="email">Integrantes (sólo llenar en caso de no ser solista):</label>
-											<div class="col-md-8">
-                    		<input type="email" class="form-control" id="email" placeholder="Integrantes..." ng-disabled="solo">
-											</div>
-											<div class="col-md-4">
-												<label for="email">Solista:</label>
-												<input type="checkbox" ng-click="solo = !solo">
-											</div>
+                    	<label for="gender">Género:</label>
+												<select class="form-control" id="gender" required>
+													<option disabled="disabled" selected="selected" value="">Elegí tu género...</option>
+ 													<option value="danza">Danza</option>
+ 													<option value="magia">Magia</option>
+ 													<option value="musica">Música</option>
+													<option value="solidario">Solidario</option>
+										  	</select>
                   	</fieldset>
 
 										<fieldset class="form-group">

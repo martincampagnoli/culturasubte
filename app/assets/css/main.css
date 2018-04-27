@@ -755,6 +755,10 @@ hr {
   padding: 10px;
 }
 
+.italic {
+  font-style: italic;
+}
+
 @media screen and (max-width: 720px)
 {
     #headerwrap h1
