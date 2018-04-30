@@ -770,3 +770,20 @@ hr {
         font-size:2em;
     }
 }
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #efd3d2;
+ }
+ .table-bordered > thead > tr > th,
+ .table-bordered > tbody > tr > th,
+ .table-bordered > tfoot > tr > th,
+ .table-bordered > thead > tr > td,
+ .table-bordered > tbody > tr > td,
+ .table-bordered > tfoot > tr > td {
+   border: 1px solid #d89797;
+ }
+
+.table-bordered {
+  border: 1px solid #d89797;
+}
