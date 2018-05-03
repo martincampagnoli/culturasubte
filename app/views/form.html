@@ -93,7 +93,7 @@
                   	</fieldset>
 										<div class="checkbox">
                     	<label>
-                      		<p><input type="checkbox"> Acepto los <a ng-click="openTerms()">términos y condiciones</a></p>
+                      		<p><input type="checkbox"> Acepto las <a data-toggle="modal" data-target="#terms">Bases y Condiciones</a></p>
                     	</label>
                   	</div>
 
@@ -109,3 +109,22 @@
 
 		</div><!-- row -->
 	</div><!-- container -->
+
+	<div class="modal fade" id="terms" tabindex="-1" role="dialog" aria-labelledby="termsLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="termsLabel">Bases y Condiciones</h4>
+	      </div>
+	      <div class="modal-body">
+	        <p>
+						<div ng-include="'views/terms.html'"></div>
+					</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-red" data-dismiss="modal">Cerrar</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
