@@ -692,9 +692,10 @@ hr {
 .cardinfo {
     background: #fff;
     padding: 15px;
-    margin: 2px;
+    margin: 10px;
     text-align: left;
 }
+
 .cardinfo i {
     font-size: 18px;
     padding-right: 20px;
