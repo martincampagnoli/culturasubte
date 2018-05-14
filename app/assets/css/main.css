@@ -788,3 +788,7 @@ hr {
 .table-bordered {
   border: 1px solid #d89797;
 }
+
+.w-break{
+    word-wrap: break-word;
+}
