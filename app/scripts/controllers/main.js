@@ -25,7 +25,6 @@ angular.module('csApp')
         artistRef.once('value', function(snapshot) {
           $timeout(function(){
             $scope.artists = snapshot.val();
-            console.dir(snapshot.val());
             UIHelper.unblockUI();
           });
         });
@@ -37,14 +36,22 @@ angular.module('csApp')
       linesRef.once('value', function(snapshot) {
         $timeout(function(){
           $scope.lines = snapshot.val();
-          console.dir(snapshot.val());
         });
       });
 		}
 
+    function loadNotes(){
+        $timeout(function(){
+          $http.get('./data/notes.json').then(function(response) {
+            $scope.notes = response.data;
+        });
+      });
+    }
+
     function init(){
         loadArtists();
         loadLines();
+        loadNotes();
     }
 
     $scope.getArtistDetails = function(){
@@ -52,7 +59,6 @@ angular.module('csApp')
           detailsRef.once('value', function(snapshot) {
             $timeout(function(){
               $scope.artist = snapshot.val();
-              console.dir(snapshot.val());
             });
           });
     };
