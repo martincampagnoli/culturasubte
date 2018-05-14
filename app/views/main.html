@@ -91,54 +91,21 @@
 					<p></p>
 				</div>
 				<div class="col-lg-4 goright">
-					<p><a href="#"><i class="fa fa-angle-right"></i>Ver todas las novedades</a></p>
+					<p><a href="#notes"><i class="fa fa-angle-right"></i>Ver todas las novedades</a></p>
 				</div>
 			</div>
 
 			<div class="row mt">
-				<div class="col-lg-4">
+				<div class="col-lg-4" ng-repeat="n in notes | limitTo:3">
 					<img class="img-responsive" src="assets/img/post01.jpg" alt="">
-					<h3><a href="">Nota 1</a></h3>
-					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+					<h3><a href="">{{n.nombre}}</a></h3>
+					<p>{{n.descripcion}}</p>
 					<p><a href=""><i class="fa fa-link"></i> Leer Mas</a></p>
-				</div>
-				<div class="col-lg-4">
-					<img class="img-responsive" src="assets/img/post02.jpg" alt="">
-					<h3><a href="">Nota 2</a></h3>
-					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-					<p><a href=""><i class="fa fa-link"></i> Leer Mas</a></p>
-				</div>
-				<div class="col-lg-4">
-					<img class="img-responsive" src="assets/img/post03.jpg" alt="">
-					<h3><a href="">Nota 3</a></h3>
-					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-					<p><a href=""><i class="fa fa-link"></i> Leer Mas</a></p>
-				</div>
+					<br>
+					</div>
 			</div>
 
 		</div>
-	<!-- CLIENTS LOGOS -->
-		<!-- <div id="lg">
-			<div class="container">
-				<div class="row centered">
-					<div class="col-lg-2 col-lg-offset-1">
-						<img src="assets/img/clients/c01.gif" alt="">
-					</div>
-					<div class="col-lg-2">
-						<img src="assets/img/clients/c02.gif" alt="">
-					</div>
-					<div class="col-lg-2">
-						<img src="assets/img/clients/c03.gif" alt="">
-					</div>
-					<div class="col-lg-2">
-						<img src="assets/img/clients/c04.gif" alt="">
-					</div>
-					<div class="col-lg-2">
-						<img src="assets/img/clients/c05.gif" alt="">
-					</div>
-				</div>
-			</div>
-		</div> -->
 
 
 		<!--CALL TO ACTION -->
