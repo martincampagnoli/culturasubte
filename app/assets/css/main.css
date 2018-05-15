@@ -792,3 +792,32 @@ hr {
 .w-break{
     word-wrap: break-word;
 }
+
+.panel-title{
+    font-weight: bold;
+    color:white!important;
+
+}
+
+.panel-heading > a {
+  cursor:pointer;
+}
+
+.linea-a{
+  background-color: #428bca !important;
+}
+.linea-b{
+  background-color: red !important;
+}
+.linea-c{
+  background-color: blue !important;
+}
+.linea-d{
+  background-color: green !important;
+}
+.linea-e{
+  background-color: violet !important;
+}
+.linea-h{
+  background-color: #f1f10e !important;
+}
