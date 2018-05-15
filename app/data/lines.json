@@ -1,6 +1,7 @@
 [  {
       "nombre": "línea A",
-      "descripcion": "Esta línea une las estaciones Plaza de Mayo y San Pedrito. Comienza junto a la Casa Rosada, sigue el trayecto de las avenidas de Mayo y Rivadavia y finaliza en el barrio de Flores. Combina con las líneas C, D, E y H. Se inauguró en 1913 y fue la primera en ser construida. Es reconocida por el color celeste.",
+      "class": "linea-a",
+      "descripcion": "Esta línea une las estaciones Plaza de Mayo y San Pedrito.<br> Comienza junto a la Casa Rosada, sigue el trayecto de las avenidas de Mayo y Rivadavia y finaliza en el barrio de Flores. <br>Combina con las líneas C, D, E y H.<br> Se inauguró en 1913 y fue la primera en ser construida. Es reconocida por el color celeste.",
       "artistas": [{
                   "nombre":"Bandoneón Patagónico",
                   "horario":"Mañanas de lunes a viernes",
@@ -9,7 +10,8 @@
     },
     {
       "nombre": "línea B",
-      "descripcion": "Esta línea une las estaciones Leandro N. Alem y Juan Manuel de Rosas. Comienza en la Avenida Leandro Alem, sigue el trayecto de las avenidas Corrientes y Triunvirato para finalizar en el barrio de Villa Urquiza. Combina con las líneas C, D y H. Se inauguró en 1930 y es reconocida por el color rojo.",
+      "class": "linea-b",
+      "descripcion": "Esta línea une las estaciones Leandro N. Alem y Juan Manuel de Rosas.<br> Comienza en la Avenida Leandro Alem, sigue el trayecto de las avenidas Corrientes y Triunvirato para finalizar en el barrio de Villa Urquiza. <br>Combina con las líneas C, D y H.<br> Se inauguró en 1930 y es reconocida por el color rojo.",
       "artistas": [{
                   "nombre":"Alegría Subterránea",
                   "horario":"Noche del último viernes de cada mes",
@@ -19,7 +21,8 @@
     },
     {
        "nombre": "línea C",
-       "descripcion": "Esta línea une las estaciones Constitución y Retiro, realizando el trayecto existente entre las dos estaciones ferroviarias que llevan el mismo nombre bajo la avenida Nueve de Julio. Combina con las líneas A, B, D y E. Se inauguró en 1934 y en ella se colocaron los primeros murales decorativos del subte. Es reconocida por el color azul.",
+       "class": "linea-c",
+       "descripcion": "Esta línea une las estaciones Constitución y Retiro, realizando el trayecto existente entre las dos estaciones ferroviarias que llevan el mismo nombre bajo la avenida Nueve de Julio.<br> Combina con las líneas A, B, D y E.<br> Se inauguró en 1934 y en ella se colocaron los primeros murales decorativos del subte.<br> Es reconocida por el color azul.",
        "artistas": [{
                    "nombre":"",
                    "horario":"",
@@ -29,7 +32,8 @@
       {
 
         "nombre": "línea D",
-        "descripcion": "Esta línea une las estaciones Catedral y Congreso de Tucumán. Comienza junto a la Catedral Metropolitana en Plaza de Mayo, sigue el curso de la Diagonal Norte y luego de las Avenidas Santa Fe y Cabildo, para finalizar en el barrio de Belgrano. Combina con todas las líneas del subte. Se inauguró en 1937 y es reconocida por el color verde.",
+        "class": "linea-d",
+        "descripcion": "Esta línea une las estaciones Catedral y Congreso de Tucumán.<br> Comienza junto a la Catedral Metropolitana en Plaza de Mayo, sigue el curso de la Diagonal Norte y luego de las Avenidas Santa Fe y Cabildo, para finalizar en el barrio de Belgrano. <br>Combina con todas las líneas del subte. <br>Se inauguró en 1937 y es reconocida por el color verde.",
         "artistas": [{
                     "nombre":"Juan Ciovini",
                     "horario":"Mañanas de lunes a viernes",
@@ -38,19 +42,20 @@
 
       },
       {
-
         "nombre": "línea E",
-        "descripcion": "Esta línea une las estaciones Bolivar y Plaza de los Virreyes. Comienza a la derecha del Cabildo, frente a Plaza de Mayo , sigue el curso de la Diagonal Sur y luego de las Avenidas San Juan y Directorio, para finalizar en el barrio de Flores. Combina con las líneas A,C,D ,H y con el servicio de Premetro. Se inauguró en 1944 y es reconocida por el color magenta.",
+        "class": "linea-e",
+        "descripcion": "Esta línea une las estaciones Bolivar y Plaza de los Virreyes.<br> Comienza a la derecha del Cabildo, frente a Plaza de Mayo , sigue el curso de la Diagonal Sur y luego de las Avenidas San Juan y Directorio, para finalizar en el barrio de Flores.<br> Combina con las líneas A,C,D ,H y con el servicio de Premetro. <br>Se inauguró en 1944 y es reconocida por el color magenta.",
         "artistas": [{
-                    "nombre":"",
-                    "horario":"",
-                    "estacion":""
+                    "nombre":"Sebastián Ango",
+                    "horario":"Tardes de los días de semana",
+                    "estacion":"En el vagón a lo largo de toda la línea"
                     }]
 
       },
       {
         "nombre": "línea H",
-        "descripcion": "Esta línea une las estaciones Bolivar y Plaza de los Virreyes. Comienza a la derecha del Cabildo, frente a Plaza de Mayo , sigue el curso de la Diagonal Sur y luego de las Avenidas San Juan y Directorio, para finalizar en el barrio de Flores. Combina con las líneas A,C,D ,H y con el servicio de Premetro. Se inauguró en 1944 y es reconocida por el color magenta.",
+        "class": "linea-h",
+        "descripcion": "Esta línea une las estaciones Hospitales y Las Heras.<br>Comienza en Parque Patricios, sigue el curso de las Avenidas Jujuy y Pueyrredón para finalizar en el barrio de Recoleta.<br> Combina con las líneas A,B,D y E. <br>Se inauguró en 2011 y es reconocida por el color amarillo.",
         "artistas": [{
                     "nombre":"Rumbo Subterráneo",
                     "horario":"Todas las mañanas de martes a domingo",

@@ -31,13 +31,11 @@ angular.module('csApp')
 		}
 
     function loadLines() {
-      var linesRef = firebase.database().ref('lines/');
-
-      linesRef.once('value', function(snapshot) {
-        $timeout(function(){
-          $scope.lines = snapshot.val();
-        });
+      $timeout(function(){
+        $http.get('./data/lines.json').then(function(response) {
+          $scope.lines = response.data;
       });
+    });
 		}
 
     function loadNotes(){
