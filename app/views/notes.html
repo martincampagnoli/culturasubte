@@ -25,8 +25,8 @@
 		<div class="row mt">
 			<div class="col-lg-4" ng-repeat="n in notes">
 				<h3><a href="">{{n.nombre}}</a></h3>
-				<p>{{n.descripcion}}</p>
-				<p><a href=""><i class="fa fa-link"></i> Leer Mas</a></p>
+				<p ng-bind-html="n.descripcion"></p>
+				<p><a href=""><i class="fa fa-link"></i> Leer más</a></p>
 				<br>
 			</div>
 		</div>
