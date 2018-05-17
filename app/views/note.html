@@ -12,10 +12,10 @@
 
 
 	<!-- BLOG POSTS -->
-	<div class="container">
+	<div class="container" ng-init="getNote()">
 		<div class="row mt">
 			<div class="col-lg-12">
-				<h1>Notas Subterráneas </h1>
+				<h1>{{note.nombre}} </h1>
 			</div>
 			<div class="col-lg-8">
 				<p></p>
@@ -23,10 +23,8 @@
 		</div>
 
 		<div class="row mt">
-			<div class="col-lg-4" ng-repeat="n in notes">
-				<h3><a href="#notes/{{$index}}">{{n.nombre}}</a></h3>
-				<p ng-bind-html="n.descripcion"></p>
-				<p><a href="#notes/{{$index}}"><i class="fa fa-link"></i> Leer más</a></p>
+			<div class="col-lg-12">
+				<p ng-bind-html="note.contenido"></p>
 				<br>
 			</div>
 		</div>

@@ -40,6 +40,9 @@ angular
   	  .when('/notes', {
           templateUrl: 'views/notes.html'
         })
+      .when('/notes/:id', {
+            templateUrl: 'views/note.html'
+          })
   	  .when('/services', {
           templateUrl: 'views/services.html'
         })

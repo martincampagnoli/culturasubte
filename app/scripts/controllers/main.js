@@ -10,14 +10,6 @@
  */
 angular.module('csApp')
   .controller('MainCtrl', ['$scope', '$http', '$timeout', '$location', '$routeParams', function ($scope, $http, $timeout, $location, $routeParams) {
-    $scope.lineasConst = {
-      a: "A",
-      b: "B",
-      c: "C",
-      d: "D",
-      e: "E",
-      h: "H",
-    };
 
     function loadArtists() {
       var artistRef = firebase.database().ref('artists/');
@@ -60,6 +52,16 @@ angular.module('csApp')
             });
           });
     };
+
+    $scope.getNote = function (){
+      UIHelper.blockUI();
+      loadNotes();
+      $timeout(function(){
+        $scope.note = $scope.notes[$routeParams.id];
+        UIHelper.unblockUI();
+      },500);
+
+    }
 
     $scope.goTo = function (str) {
       $location.url(str);

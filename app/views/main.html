@@ -97,9 +97,9 @@
 
 			<div class="row mt">
 				<div class="col-lg-4" ng-repeat="n in notes | limitTo:3">
-					<h3><a href="">{{n.nombre}}</a></h3>
+					<h3><a href="#notes/{{$index}}">{{n.nombre}}</a></h3>
 					<p>{{n.descripcion}}</p>
-					<p><a href=""><i class="fa fa-link"></i> Leer Mas</a></p>
+					<p><a href="#notes/{{$index}}"><i class="fa fa-link"></i> Leer Más</a></p>
 					<br>
 					</div>
 			</div>
