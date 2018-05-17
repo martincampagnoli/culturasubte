@@ -76,8 +76,17 @@ angular.module('csApp')
       $location.url(str);
 		};
 
+    $scope.submit = function(){
+      UIHelper.blockUI();
+      $timeout(function(){
+        $scope.submitted = true;
+        UIHelper.unblockUI();
+      },1000);
+    };
+
     $scope.$on('$routeChangeStart', function() {
      $('html, body').animate({ scrollTop: 0 }, 'fast');
+     $scope.submitted = false;
     });
 
 
