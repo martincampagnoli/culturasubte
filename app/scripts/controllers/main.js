@@ -80,6 +80,7 @@ angular.module('csApp')
       UIHelper.blockUI();
       $timeout(function(){
         $scope.submitted = true;
+        $('html, body').animate({ scrollTop: 350 }, 'fast');
         UIHelper.unblockUI();
       },1000);
     };
