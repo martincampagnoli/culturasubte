@@ -1,4 +1,5 @@
-/*global $, AnimOnScroll, UIHelper, UIHelper*/
+/*global $, AnimOnScroll, UIHelper*/
+/*jshint unused:false*/
 
 'use strict';
 
