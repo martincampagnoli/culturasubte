@@ -1,4 +1,4 @@
-/*global $, AnimOnScroll*/
+/*global $, AnimOnScroll, UIHelper*/
 
 'use strict';
 

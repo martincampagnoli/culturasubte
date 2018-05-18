@@ -1,4 +1,4 @@
-/*global $, firebase*/
+/*global $, firebase, UIHelper*/
 'use strict';
 
 /**
@@ -69,8 +69,7 @@ angular.module('csApp')
         $scope.note = $scope.notes[$routeParams.id];
         UIHelper.unblockUI();
       },500);
-
-    }
+    };
 
     $scope.goTo = function (str) {
       $location.url(str);
