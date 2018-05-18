@@ -821,3 +821,9 @@ hr {
 .linea-h{
   background-color: #f1f10e !important;
 }
+
+.artist-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
