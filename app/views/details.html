@@ -17,15 +17,19 @@
 			<img class="responsive" ng-src="{{artist.profile_img}}" alt="{{a.nombre}}">
 			<div class="cardinfo">
 				<h4><b>{{artist.nombre}}</b></h4>
-				<h6>{{artist.genero}}</h6>
+				<h6>{{artist.genero | uppercase}}</h6>
 				<p>{{artist.bio}}</p>
+				<br>
+				<p>Lo podés encontrar en: {{artist.lugar}}</p><br>
 				<p>
 					<a href="{{artist.contacto.facebook}}" target="_blank" ng-if="artist.contacto.facebook"><i class="fa fa-facebook"></i></a>
 					<a href="{{artist.contacto.instagram}}" target="_blank" ng-if="artist.contacto.instagram"><i class="fa fa-instagram"></i></a>
 					<a href="{{artist.contacto.twitter}}" target="_blank" ng-if="artist.contacto.twitter"><i class="fa fa-twitter"></i></a>
 					<a href="mailto:{{artist.contacto.email}}" ng-if="artist.contacto.email"><i class="fa fa-envelope"></i></a>
 					<a ng-if="artist.contacto.tel" title="{{artist.contacto.tel}}"><i class="fa fa-phone"></i></a>
+					<button type="button" class="btn btn-red pull-right" ng-click="openNote(artist.id_nota-1)" ng-disabled="artist.id_nota == -1">Conocé más sobre el artista</button>
 				</p>
+
 			</div>
 		</div>
 		<br>

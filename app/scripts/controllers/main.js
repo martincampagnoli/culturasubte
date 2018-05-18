@@ -76,6 +76,11 @@ angular.module('csApp')
       $location.url(str);
 		};
 
+    $scope.openNote = function (id) {
+      var str = "notes/" + id;
+      $location.url(str);
+		};
+
     $scope.submit = function(){
       UIHelper.blockUI();
       $timeout(function(){
