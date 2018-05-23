@@ -20,7 +20,7 @@
 				<h6>{{artist.genero | uppercase}}</h6>
 				<p>{{artist.bio}}</p>
 				<br>
-				<p>Lo podés encontrar en: {{artist.lugar}}</p><br>
+				<p>{{artist.solo ? 'Lo' : 'Los'}} podés encontrar en: {{artist.lugar}}</p><br>
 				<p>
 					<a href="{{artist.contacto.facebook}}" target="_blank" ng-if="artist.contacto.facebook"><i class="fa fa-facebook"></i></a>
 					<a href="{{artist.contacto.instagram}}" target="_blank" ng-if="artist.contacto.instagram"><i class="fa fa-instagram"></i></a>
