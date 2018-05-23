@@ -27,7 +27,7 @@
 					<a href="{{artist.contacto.twitter}}" target="_blank" ng-if="artist.contacto.twitter"><i class="fa fa-twitter"></i></a>
 					<a href="mailto:{{artist.contacto.email}}" ng-if="artist.contacto.email"><i class="fa fa-envelope"></i></a>
 					<a ng-if="artist.contacto.tel" title="{{artist.contacto.tel}}"><i class="fa fa-phone"></i></a>
-					<button type="button" class="btn btn-red pull-right" ng-click="openNote(artist.id_nota-1)" ng-disabled="artist.id_nota == -1">Conocé más sobre el artista</button>
+					<button type="button" class="btn btn-red pull-right conoce-artist" ng-click="openNote(artist.id_nota-1)" ng-disabled="artist.id_nota == -1">Conocé más sobre el artista</button>
 				</p>
 
 			</div>

@@ -54,9 +54,9 @@
 										<p ng-bind-html="l.descripcion"></p>
 									</div>
 									<div class="col-lg-4" style="background-color:#f2f2f2">
-											<p style="text-align:center; padding-top: 10px;">¿Qué podés ver?</span><br></p>
-											<p>Consultá los atractivos turísticos cercanos a la <a href="#notes/{{$index}}">{{l.nombre}}</a>
-											</p>
+											<p style="text-align:center; padding-top: 10px;">¿Qué podés ver?</span></p>
+											<button style="margin-bottom: 10px; margin-left: -5px; white-space: normal;" type="button" class="btn btn-red" ng-click="openNote($index)">
+											Consultá los atractivos turísticos cercanos a la {{l.nombre}}</button>
 									</div>
 								</div>
 								<div class="col-lg-12">

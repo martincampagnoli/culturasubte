@@ -770,6 +770,10 @@ hr {
     {
         font-size:2em;
     }
+    .conoce-artist
+    {
+        padding: 8px !important;
+    }
 }
 
 .table-striped>tbody>tr:nth-child(odd)>td,
